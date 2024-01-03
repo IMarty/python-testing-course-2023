@@ -20,4 +20,7 @@ class RestaurantReviews:
     # TDD possible
     def delete_review(self, restaurant):
         # Ecrire l'implementation
-        return
+        if restaurant not in self.reviews:
+            raise ValueError("Review not found to delete.")
+        del self.reviews[restaurant]
+        return "Review deleted for {}".format(restaurant)

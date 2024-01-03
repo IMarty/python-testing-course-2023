@@ -5,7 +5,7 @@ def test_delete_existing():
     rr= RestaurantReviews()
     rr.add_review("Pasta Palace", "Delicious pasta dishes.", 5)
     result = rr.delete_review("Pasta Palace")
-    assert (result == "Review deleted for Pasta Palace")
+    assert (result == "Review deleted for Pasta Palace.")
     # Ajout d'une partie "fonctionnelle" à  notre test : 
     # On test aussi les implications de la suppression d'un review
     result2 = rr.get_review("Pasta Palace") 

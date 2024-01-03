@@ -1,6 +1,7 @@
 import pytest
 from restaurant_reviews import RestaurantReviews
 
+# Fixture : Définition d'un scério réutilisable dans les tests
 @pytest.fixture
 def restaurant_reviews_with_two_restaurants():
     rr = RestaurantReviews()
